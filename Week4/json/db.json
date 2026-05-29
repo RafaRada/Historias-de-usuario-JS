@@ -1,0 +1,17 @@
+{
+  "productos": [
+    {
+      "id": "VLlCUGm2A8A",
+      "nombre": "Sal",
+      "precio": "900.00",
+      "cantidad": 4
+    },
+    {
+      "id": "ku8UOwb8fKc",
+      "nombre": "Azucar",
+      "precio": "1700.00",
+      "cantidad": 5
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+} 

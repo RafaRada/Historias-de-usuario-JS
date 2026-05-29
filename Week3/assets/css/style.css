@@ -1,0 +1,114 @@
+
+    /* Reset básico y centrado absoluto en la pantalla */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f4f7f6; /* Color de fondo suave */
+        color: #333;
+    }
+
+    /* Títulos centrados */
+    h1 {
+        margin-bottom: 5px;
+        color: #2c3e50;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 25px;
+        color: #7f8c8d;
+    }
+
+    /* Contenedor del formulario (Input + Botón) */
+    .contenedor-formulario {
+        display: flex;
+        gap: 10px; /* Espacio entre el input y el botón */
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: 400px; /* Controla el ancho máximo en pantallas grandes */
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* Estilo estilizado para el Input */
+    #inputNota {
+        flex: 1; /* El input toma todo el espacio disponible */
+        padding: 12px 16px;
+        border: 2px solid #bdc3c7;
+        border-radius: 8px;
+        font-size: 16px;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+
+    /* Cambio de color cuando haces clic en el input */
+    #inputNota:focus {
+        border-color: #3498db;
+    }
+
+    /* Estilo para el Botón Agregar */
+    #btnAgregar {
+        padding: 12px 24px;
+        background-color: #2ecc71; /* Verde éxito */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    #btnAgregar:hover {
+        background-color: #27ae60; /* Verde más oscuro al pasar el cursor */
+    }
+
+    /* Lista de notas centrada */
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 400px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    /* Tarjetas de cada nota individual */
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        padding: 14px 18px;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra suave */
+        border-left: 5px solid #3498db; /* Línea decorativa azul a la izquierda */
+        font-size: 16px;
+        word-break: break-word; /* Evita que textos largos rompan el diseño */
+    }
+
+    /* Botón Eliminar dentro de la nota */
+    li button {
+        background-color: #e74c3c; /* Rojo peligro */
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 6px;
+        font-size: 14px;
+        margin-left: 15px;
+        transition: background-color 0.3s;
+    }
+
+    li button:hover {
+        background-color: #c0392b; /* Rojo más oscuro al pasar el cursor */
+    }
+

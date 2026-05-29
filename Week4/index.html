@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Desempeño - Gestión de Productos</title>
+    <!-- Ruta exacta del CSS externa -->
+    <link rel="stylesheet" href="/Week4/assets/css/style.css">
+</head>
+<body>
+
+    <h1>Registro de Productos</h1>
+
+    <!-- Contenedor para mensajes dinámicos de éxito o error -->
+    <div id="contenedor-mensaje"></div>
+
+    <!-- Formulario de captura de datos -->
+    <form id="formulario-producto">
+        <div>
+            <label for="nombre">Nombre del Producto:</label>
+            <input type="text" id="nombre">
+        </div>
+        <div>
+            <label for="precio">Precio ($):</label>
+            <input type="number" id="precio" step="0.01">
+        </div>
+        <div>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" min="1">
+        </div>
+        <button type="submit">Guardar Producto</button>
+    </form>
+
+    <!-- Panel de control con sincronización, consulta y vaciado -->
+    <div class="panel-botones">
+        <button id="btn-sincronizar" type="button">Sincronizar con Servidor</button>
+        <button id="btn-mostrar-api" type="button">Mostrar Datos de la API</button>
+        <button id="btn-vaciar-api" type="button">Vaciar Base de Datos</button>
+    </div>
+
+    <!-- Lista donde se renderizarán los datos dinámicamente -->
+    <h2>Productos Registrados</h2>
+    <ul id="lista-productos"></ul>
+
+    <!-- Ruta exacta del script de JavaScript externa -->
+    <script src="/Week4/assets/js/app.js"></script>
+</body>
+</html>

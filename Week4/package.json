@@ -1,0 +1,15 @@
+{
+  "name": "week4",
+  "version": "1.0.0",
+  "description": "├── assets │   ├── css │   │   └── style.css │   └── js │       └── script.js ├── index.html └── readme.md",
+  "main": "index.js",
+  "scripts": {
+    "dev": "json-server ./json/db.json --port 3002"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  }
+}

@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+
+body header {
+  background-color: green; }
+body main {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  /*Pseudo clase = Modifica el estado*/
+  /*Pseudo Elemento = Modifica el contenido*/
+  /*Pseudo Elemento: Esto sirve para modificar algo en especifico (En este caso la primera letra de cualquier parrafo)*/
+  /*Pseudoi Elemento: Esto sirve para agregar algo desde el css*/ }
+  body main aside {
+    background-color: gray; }
+  body main .arriba_uno {
+    background-color: red; }
+  body main .primera_parte_abajo {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    body main .primera_parte_abajo .izquierda_uno {
+      background-color: blueviolet; }
+    body main .primera_parte_abajo .derecha_uno {
+      background-color: peru; }
+  body main p::first-letter {
+    font-size: 2em;
+    color: white; }
+  body main aside::before {
+    content: "";
+    background-image: url(https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/118E/production/_98049440_463ebdce-bddb-4485-a0ff-1dccc87b6a22.jpg.webp);
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 30px; }
+body footer {
+  background-color: aqua; }
+
+/*# sourceMappingURL=style.css.map */
